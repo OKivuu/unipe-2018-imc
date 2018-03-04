@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/textViewPeso"
-        android:layout_width="96dp"
+        android:layout_width="146dp"
         android:layout_height="43dp"
         android:layout_above="@+id/editTextPeso"
         android:layout_alignLeft="@+id/editTextPeso"
         android:layout_alignStart="@+id/editTextPeso"
-        android:text="PESO:"
+        android:text="PESO (kg):"
         android:textSize="24sp" />
 
     <EditText
@@ -53,12 +53,12 @@
 
     <TextView
         android:id="@+id/textViewAltura"
-        android:layout_width="112dp"
+        android:layout_width="162dp"
         android:layout_height="43dp"
         android:layout_above="@+id/editTextAltura"
-        android:layout_alignLeft="@+id/editTextAltura"
-        android:layout_alignStart="@+id/editTextAltura"
-        android:text="ALTURA:"
+        android:layout_alignEnd="@+id/editTextAltura"
+        android:layout_alignRight="@+id/editTextAltura"
+        android:text="ALTURA (cm):"
         android:textSize="24sp" />
 
 </RelativeLayout>
