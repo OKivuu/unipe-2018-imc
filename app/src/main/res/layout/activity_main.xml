@@ -23,9 +23,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editTextPeso"
-        android:layout_alignEnd="@+id/buttonCalcular"
-        android:layout_alignRight="@+id/buttonCalcular"
-        android:layout_marginBottom="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
         android:inputType="numberDecimal" />
 
     <Button
@@ -49,11 +49,11 @@
 
     <TextView
         android:id="@+id/textViewAltura"
-        android:layout_width="162dp"
+        android:layout_width="182dp"
         android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/editTextAltura"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:layout_toLeftOf="@+id/editTextAltura"
         android:layout_toStartOf="@+id/editTextAltura"
         android:text="ALTURA (cm):"

@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
                 String pesoString = String.valueOf(editTextPeso.getText());
                 String alturaString = String.valueOf(editTextAltura.getText());
 
+                editTextResultado.setText("");
+
                 if ( (null != pesoString && pesoString.length() > 0) && (null != alturaString && alturaString.length() > 0) )
                 {
                     double peso = Double.parseDouble(pesoString);
