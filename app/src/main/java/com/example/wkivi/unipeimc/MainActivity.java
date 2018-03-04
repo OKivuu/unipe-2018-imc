@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextPeso;
     private EditText editTextAltura;
     private Button buttonCalcular;
+    private TextView editTextResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         editTextPeso = findViewById(R.id.editTextPeso);
         editTextAltura = findViewById(R.id.editTextAltura);
         buttonCalcular = findViewById(R.id.buttonCalcular);
+        editTextResultado = findViewById(R.id.textViewResultado);
 
         buttonCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     if (peso > 0 && altura > 0) {
                         double resultado = peso / (Math.pow(altura, 2));
 
-                        Toast toast = Toast.makeText(getApplicationContext(), String.valueOf(resultado), Toast.LENGTH_LONG);
-                        toast.show();
+                        editTextResultado.setText("IMC: "+String.valueOf(resultado));
                     } else {
                         Toast toast = Toast.makeText(getApplicationContext(), "Valor Invalido", Toast.LENGTH_LONG);
                         toast.show();

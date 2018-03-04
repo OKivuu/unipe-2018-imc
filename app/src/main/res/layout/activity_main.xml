@@ -11,9 +11,10 @@
         android:id="@+id/textViewPeso"
         android:layout_width="96dp"
         android:layout_height="43dp"
-        android:layout_above="@+id/editTextPeso"
-        android:layout_alignLeft="@+id/editTextPeso"
-        android:layout_alignStart="@+id/editTextPeso"
+        android:layout_above="@+id/buttonCalcular"
+        android:layout_alignEnd="@+id/textViewAltura"
+        android:layout_alignRight="@+id/textViewAltura"
+        android:layout_marginBottom="23dp"
         android:text="PESO:"
         android:textSize="24sp" />
 
@@ -21,44 +22,71 @@
         android:id="@+id/editTextAltura"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editTextPeso"
-        android:layout_alignBottom="@+id/editTextPeso"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
+        android:layout_above="@+id/editTextPeso"
+        android:layout_alignEnd="@+id/buttonCalcular"
+        android:layout_alignRight="@+id/buttonCalcular"
+        android:layout_marginBottom="12dp"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/buttonCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="185dp"
-        android:text="CALCULAR"
+        android:layout_centerVertical="true"
+        android:text="Mostrar IMC"
         android:textSize="24sp" />
 
     <EditText
         android:id="@+id/editTextPeso"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonCalcular"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="62dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
+        android:layout_alignBaseline="@+id/textViewPeso"
+        android:layout_alignBottom="@+id/textViewPeso"
+        android:layout_alignLeft="@+id/editTextAltura"
+        android:layout_alignStart="@+id/editTextAltura"
         android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/textViewAltura"
         android:layout_width="112dp"
         android:layout_height="43dp"
-        android:layout_above="@+id/editTextAltura"
-        android:layout_alignLeft="@+id/editTextAltura"
-        android:layout_alignStart="@+id/editTextAltura"
+        android:layout_alignTop="@+id/editTextAltura"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/editTextAltura"
+        android:layout_toStartOf="@+id/editTextAltura"
         android:text="ALTURA:"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_green_light"
+        android:text="Calculo de IMC"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonCalcular"
+        android:layout_marginTop="73dp"
+        android:background="@android:color/holo_green_dark"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
 
 </RelativeLayout>
